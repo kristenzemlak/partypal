@@ -1,0 +1,59 @@
+// FONTS
+$baseFont: 'Roboto', sans-serif;
+$specialFont: 'Monoton', cursive;
+
+// COLOURS
+$primary: #6CCA51;
+$secondary: #A3EB6A;
+$accent: #FA6095;
+$dark: black;
+$light: white; 
+
+// GENERAL STYLES
+
+html {
+    font-size: 120%;
+}
+
+body {
+    font-family: $baseFont;
+}
+
+.wrapper {
+    max-width: 1600px;
+    margin: 0 auto; 
+    padding: 0 4rem; 
+}
+
+// HEADLINES
+
+h1, h2, h3, h4, h5 {
+    letter-spacing: .1rem;
+    margin: 0;
+    padding: 0;  
+}
+
+h1, h2 {
+    font-family: $specialFont; 
+    color: $light; 
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 6rem; 
+    padding-top: 4rem;
+}
+
+h2 {
+    font-family: $baseFont; 
+    font-size: 3.4rem;
+    font-weight: 100;
+    padding-top: 0;
+    padding-bottom: 4rem;
+}
+
+h3 {
+    font-size: 2rem; 
+    font-weight: 100; 
+    padding-top: 4rem;
+    padding-bottom: 1rem; 
+}
+

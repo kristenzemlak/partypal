@@ -1,0 +1,72 @@
+// FORM & LIST ITEM /////////////////
+
+form, li {
+    display: flex;  
+    justify-content: space-between;
+    input, 
+    .listFood, 
+    .listName {
+        width: 35%; 
+        background: white; 
+    }
+}
+
+form input {
+    border: 2px solid $primary;
+    padding: 1rem;
+    &:hover, 
+    &:focus {
+        border: 2px solid $dark;
+        color: $dark;
+    }
+}   
+
+li {
+    padding: 0.8rem; 
+    margin: 0.8rem 0 ;
+    border: 2px solid lightgray;
+    
+}
+
+ul {
+    list-style-type: none;
+    padding: 0; 
+    margin: 0; 
+}
+
+
+
+// BUTTONS /////////////////
+
+.submitButton, 
+.removeButton {
+    text-transform: uppercase; 
+    letter-spacing: 0.1rem; 
+    width: 200px;
+    height: 50px;
+    color: $light; 
+    margin-left: 1rem;
+}
+
+.submitButton{
+    background: $primary;
+    border: 2px solid $primary; 
+    margin: 0 0.8rem;
+    &:hover, 
+    &:focus {
+        background: $secondary;
+        border: 2px solid $dark;
+    }
+}
+
+.removeButton {
+    background: gray;
+    border: 2px solid gray; 
+    &:hover, 
+    &:focus {
+        background: black;
+        border: 2px solid $dark;
+    }
+}
+
+
