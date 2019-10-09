@@ -93,41 +93,32 @@ class App extends Component {
         <Header />
 
         <div className="inputArea wrapper">
-
           <h3>Add to the list:</h3>
-
           <form action="" className="form" >
-
             <label className="visuallyHidden" name="who" htmlFor="who"></label>
-            <input
-                className="addWho"
-                name="who"
-                type="text"
-                onChange={this.handleChange}
-                value={this.state.who}
-                placeholder={`Name`}
-            />
-            
+              <input
+                  className="addWho"
+                  name="who"
+                  type="text"
+                  onChange={this.handleChange}
+                  value={this.state.who}
+                  placeholder={`Name`}
+              />
             <label className="visuallyHidden" name="what" htmlFor="what"></label>
-            <input
-                className="addWhat"
-                name="what"
-                type="text"
-                onChange={this.handleChange}
-                value={this.state.what}
-                placeholder={`Item`}
-            />
-
+              <input
+                  className="addWhat"
+                  name="what"
+                  type="text"
+                  onChange={this.handleChange}
+                  value={this.state.what}
+                  placeholder={`Item`}
+              />
             <button onClick={this.handleSubmit} className="submitButton">Add</button>
-
           </form>
-        </div>{/* /.inputArea*/}
+        </div>
 
         <div className="resultsArea wrapper">
-          
           <h3>Already accounted for:</h3>
-
-          {/* function for ListItem component */}
           <ul>
             {this.state.items.map((item) => {
               return (
@@ -139,7 +130,7 @@ class App extends Component {
                   removeItem={this.removeItem} />)
             })}
           </ul>
-        </div>{/* /.resultsArea*/}
+        </div>
 
         <Footer />
 
